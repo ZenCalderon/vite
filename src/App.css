@@ -1,0 +1,98 @@
+body {
+  background-color: #30302f;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.viteLogo {
+  border-radius: 1px;
+  grid-column: 1 / spans 2;
+  grid-row: 1;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.rightCont {
+  display: grid;
+  place-items: center;
+}
+.vit1 {
+  color: #9341ff;
+  font-size: 60px;
+}
+.p1 {
+  font-size: 60px;
+}
+.p2 {
+  font-size: 20px;
+}
+
+.button {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+}
+#button1 {
+  background-color: mediumslateblue;
+}
+
+#button2 {
+  background-color: mediumslateblue;
+}
+.b1 {
+  background-color: #606060;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.containerCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  background-color: #606060;
+  border: 1px solid #606060;
+  padding: 20px;
+  border-radius: 10px;
+}
+.iconContainer {
+  width: 40px;
+  height: 40px;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .viteLogo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .container,
+  .button,
+  .containerCard {
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    gap: 50px;
+  }
+
+  .vit1,
+  .p1 {
+    font-size: 40px;
+  }
+}
